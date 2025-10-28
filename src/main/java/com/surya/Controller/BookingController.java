@@ -26,6 +26,8 @@ public class BookingController {
     private final BookingService serv;
 
     @PostMapping
+    //save data of sallon
+    
     public ResponseEntity<ApiResponse<?>> save(@RequestBody BookingRequest booking,
                                                @RequestParam Long saloonId) throws Exception {
         UserDto use= new UserDto();
