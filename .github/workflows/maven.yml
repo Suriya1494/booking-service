@@ -50,7 +50,7 @@ jobs:
     - name: Build & push Docker image
       uses: mr-smithers-excellent/docker-build-push@v6
       with:
-        image: surya4028/surya-repo
+        image: booking-service
         tags: latest
         registry: docker.io
         dockerfile: Dockerfile
