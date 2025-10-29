@@ -24,8 +24,6 @@ import java.util.Set;
 public class BookingController {
 
     private final BookingService serv;
- //save api
-
     @PostMapping("/")
     public ResponseEntity<ApiResponse<?>> save(@RequestBody BookingRequest booking,
                                                @RequestParam Long saloonId) throws Exception {
