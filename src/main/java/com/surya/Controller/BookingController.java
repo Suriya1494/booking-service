@@ -25,7 +25,7 @@ public class BookingController {
 
     private final BookingService serv;
     @PostMapping("/")
-    public ResponseEntity<ApiResponse<?>> save(@RequestBody BookingRequest booking,
+    public ResponsefffEntity<ApiResponse<?>> save(@RequestBody BookingRequest booking,
                                                @RequestParam Long saloonId) throws Exception {
         UserDto use= new UserDto();
         use.setId(1L);
