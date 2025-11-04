@@ -4,7 +4,7 @@ FROM eclipse-temurin:17-jdk-jammy
 WORKDIR /app
 
 # Copy the JAR file to the working directory
-COPY target/booking-service.jar app.jar
+COPY target/booking-service.jar booking-service.jar
 
 # Expose the correct port
 EXPOSE 8094
