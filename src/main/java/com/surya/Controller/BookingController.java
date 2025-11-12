@@ -9,6 +9,7 @@ import com.surya.Response.ApiResponse;
 import com.surya.Service.BookingService;
 import com.surya.domain.BookingStatus;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,7 +24,9 @@ import java.util.Set;
 @RequiredArgsConstructor
 public class BookingController {
 
+    @Autowired
     private final BookingService serv;
+
     @PostMapping("/")
     public ResponseEntity<ApiResponse<?>> save(@RequestBody BookingRequest booking,
                                                @RequestParam Long saloonId) throws Exception {
@@ -42,8 +45,6 @@ public class BookingController {
         servic.setName("hair cut");
         servic.setDuration(30);
         list.add(servic);
-        //testing purpose hardcoded user and saloon details
-        //jhxegfwehfbiulchnwoerxoie
 
 
         return serv.createBooking(booking,use,sal,list);
