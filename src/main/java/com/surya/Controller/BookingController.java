@@ -43,6 +43,7 @@ public class BookingController {
         servic.setDuration(30);
         list.add(servic);
         //testing purpose hardcoded user and saloon details
+        //jhxegfwehfbiulchnwoerxoie
 
 
         return serv.createBooking(booking,use,sal,list);
