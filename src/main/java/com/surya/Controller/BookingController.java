@@ -44,8 +44,9 @@ public class BookingController {
         servic.setPrice(400);
         servic.setName("hair cut");
         servic.setDuration(30);
-        list.add(servic);
+       ii list.add(servic);
 //testt
+        //this for testing purposee
 
         return serv.createBooking(booking,use,sal,list);
     }
