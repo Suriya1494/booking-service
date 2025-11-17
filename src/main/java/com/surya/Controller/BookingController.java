@@ -45,6 +45,7 @@ public class BookingController {
         servic.setName("hair cut");
         servic.setDuration(30);
         list.add(servic);
+        //testuhbf'
         //testing purpose hardcoded user and saloon details
 
 
