@@ -21,7 +21,7 @@ public interface BookingService {
                                                   SaloonDto saloon,
                                                   Set<ServiceOfferingDto> service)throws Exception ;
     ResponseEntity<ApiResponse<?>> getBookingByCustomerId(Long customerId);
-
+//test
     List<Booking> getBookingsBySaloon(Long saloonId);
     ResponseEntity<ApiResponse<?>> updateBokingStatus(Long id, BookingStatus status);
 
