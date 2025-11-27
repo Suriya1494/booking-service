@@ -28,6 +28,12 @@ public class BooingServiceImp implements BookingService{
 
     private final ModelMapper mapper;
     private final BookingRepository repo;
+
+    public BooingServiceImp(ModelMapper mapper, BookingRepository repo) {
+        this.mapper = mapper;
+        this.repo = repo;
+    }
+
     @Override
     public ResponseEntity<ApiResponse<?>> createBooking(BookingRequest booking,
                                                         UserDto user,
