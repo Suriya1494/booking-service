@@ -44,13 +44,6 @@ public class BookingController {
         servic.setPrice(400);
         servic.setName("hair cut");
         servic.setDuration(30);
-        list.add(servic);
-        //testuhbf'
-        //testing purpose hardcoded user and saloon details
-
-
-        return serv.createBooking(booking,use,sal,list);
-    }
 
 
     @GetMapping("/customer")
